@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./components/head.ejs")%>
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <%- include("./components/header.ejs")%>
+
+        <%- include("./components/left.ejs")%>
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="container-fluid mt-3">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <a href="/admin/manage">
+                            <div class="card gradient-2">
+                                <div class="card-body">
+                                    <h3 class="card-title text-white">Tổng số truyện</h3>
+                                    <div class="d-inline-block">
+                                        <h2 class="text-white"><%= storiesLength %></h2>
+                                        <p class="text-white mb-0">Mới nhất</p>
+                                    </div>
+                                    <span class="float-right display-5 opacity-5"><i class="fa fa-edit"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="card gradient-3">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">Số người xem</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white">465</h2>
+                                    <p class="text-white mb-0">Mới nhất</p>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="card gradient-4">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">Lượt like</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white">100</h2>
+                                    <p class="text-white mb-0">Mới nhất</p>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-heart"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+        
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; Developed by Hoonn 279</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="/admin/plugins/common/common.min.js"></script>
+    <script src="/admin/js/custom.min.js"></script>
+    <script src="/admin/js/settings.js"></script>
+    <script src="/admin/js/gleek.js"></script>
+    <script src="/admin/js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="/admin/plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="/admin/plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="/admin/plugins/d3v3/index.js"></script>
+    <script src="/admin/plugins/topojson/topojson.min.js"></script>
+    <script src="/admin/plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="/admin/plugins/raphael/raphael.min.js"></script>
+    <script src="/admin/plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="/admin/plugins/moment/moment.min.js"></script>
+    <script src="/admin/plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="/admin/plugins/chartist/js/chartist.min.js"></script>
+    <script src="/admin/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="/js/dashboard/dashboard-1.js"></script>
+
+</body>
+
+</html>
